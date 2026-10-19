@@ -1,0 +1,98 @@
+.bd-placeholder-img {
+      text-anchor: middle;
+      user-select: none;
+      font-size: 1.125rem
+  }
+
+  @media (width>=768px) {
+      .bd-placeholder-img-lg {
+          font-size: 2.5rem
+      }
+  }
+
+  .b-example-divider {
+      background-color: #0000001a;
+      border: 1px solid #00000026;
+      border-width: 1px 0;
+      width: 100%;
+      height: 3rem;
+      box-shadow: inset 0 .5em 1.5em #0000001a, inset 0 .125em .5em #00000026
+  }
+
+  .b-example-vr {
+      flex-shrink: 0;
+      width: 1.5rem;
+      height: 100vh
+  }
+
+  .bi {
+      vertical-align: -.125em;
+      fill: currentColor
+  }
+
+  .nav-scroller {
+      z-index: 2;
+      height: 2.75rem;
+      position: relative;
+      overflow-y: hidden
+  }
+
+  .nav-scroller .nav {
+      text-align: center;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+      flex-wrap: nowrap;
+      margin-top: -1px;
+      padding-bottom: 1rem;
+      display: flex;
+      overflow-x: auto
+  }
+
+  .bd-mode-toggle {
+      z-index: 1500
+  }
+
+  .bd-mode-toggle .bi {
+      width: 1em;
+      height: 1em
+  }
+
+  .bd-mode-toggle .menu .active .bi {
+      display: block !important
+  }
+
+  :is([id*='google_ads_iframe'], [id*='taboola-'], .taboolaHeight, .taboola-placeholder, #top-ad, #credential_picker_container, #credentials-picker-container, #credential_picker_iframe, #onetap_google_intermediate_iframe, [id*='google-one-tap-iframe'], #google-one-tap-popup-container, .google-one-tap__module, .google-one-tap-modal-div, .adthrive-auto-injected-player-container, .adthrive[id^="cls-video-container"]:has(.adthrive-auto-injected-player-container), #amp_floatingAdDiv, #ez-content-blocker-container) {
+      display: none !important;
+      min-height: 0 !important;
+      height: 0 !important;
+  }
+
+
+@font-face {
+    font-family: "valveoracle";
+    src: url(../font/valveoracle-medium.ttf);
+}
+
+p {
+  font-family: "valveoracle";
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "valveoracle", Helvetica, sans-serif;
+}
+
+.nav-item.nav-link.theme-inverse {
+  font-family: "valvepulp-bold", Helvetica, sans-serif;
+}
+
+.card {
+    height: 25vh;    
+    overflow: hidden;
+}
+
+.card-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 25% 25%;
+}

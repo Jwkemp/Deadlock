@@ -1,1 +1,2 @@
-# Deadlock
+# azure-static
+Static Azure hosted website
