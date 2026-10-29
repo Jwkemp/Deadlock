@@ -26,27 +26,17 @@ const heroes = [
 const heroGrid = document.getElementById("heroGrid");
 
 heroes.forEach(({ name, image }) => {
-    const column = document.createElement("div");
-    column.className = "col";
+     const column = document.createElement("div");
+    column.className = "col-2";
 
     const card = document.createElement("div");
-    card.className = "herocard card theme-inverse";
+    card.className = "image-card";
+    card.style.backgroundImage = `url('${encodeURI(`content/img/HERO RENDERS/${image}`)}')`;
+    card.innerHTML = `
+        <h2 class="card-title">${name}</h2>
+        <p class="card-subtitle">Class</p>
+    `;
 
-    const img = document.createElement("img");
-    img.src = encodeURI(`content/img/HERO RENDERS/${image}`);
-    img.className = "herocard-img card-img";
-    img.alt = name;
-
-    const overlay = document.createElement("div");
-    overlay.className = "card-img-overlay";
-    overlay.innerHTML = `
-                    <h4 class="card-title">${name}</h4>
-                    <p class="card-text">blah blah blah</p>
-                    <p class="card-text"><small>Class</small></p>
-                `;
-
-    card.appendChild(img);
-    card.appendChild(overlay);
     column.appendChild(card);
     heroGrid.appendChild(column);
 });
